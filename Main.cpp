@@ -61,9 +61,10 @@ int main()
 	
 	std::cout <<std::endl<< *Jim;
 
-	//operator overload
+	//operator overloading
 	std::cout << std::endl << Max<std::string>("dung", "ha")<<std::endl;
 
+	//the zero/three/five rules
 	Rules humanA(new Human);
 	humanA.getHuman()->setAge(20);
 	humanA.getHuman()->setName("Dung");
