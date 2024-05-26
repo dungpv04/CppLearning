@@ -17,6 +17,7 @@ void printx2(int a) {
 
 int main()
 {
+	//lambda expression
 	std::vector<int> a = { 5, 1, 2, 4, 3, 6 };
 
 	sort(a.begin(), a.end(), [](int b, int a) {
@@ -51,6 +52,7 @@ int main()
 		std::cout << a<<" ";
 	});
 
+	//smart pointer
 	std::unique_ptr<Human> John(new Human("John", 10));
 	std::unique_ptr<Human> Jim(new Human("John", 20));
 
@@ -58,6 +60,8 @@ int main()
 	else std::cout << "No";
 	
 	std::cout <<std::endl<< *Jim;
+
+	//operator overload
 	std::cout << std::endl << Max<std::string>("dung", "ha")<<std::endl;
 
 	Rules humanA(new Human);
